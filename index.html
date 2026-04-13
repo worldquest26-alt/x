@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B's Hangout</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">B's Hangout</div>
+
+  <nav id="navLinks">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="hero.jpg" alt="">
+  <div class="hero-text">
+    <h1>Where Real Food Meets Real People</h1>
+    <p>Comfort meals, bold flavors, and a place that feels like home.</p>
+    <button class="cta-btn" onclick="callNow()">📞 Call Now</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section reveal">
+  <div class="overlay"></div>
+
+  <div class="about-content">
+    <h2>More Than a Meal — <span>A Place to Belong</span></h2>
+    <p class="about-main">
+      It’s not just about food — it’s about the feeling you get when you walk in.
+    </p>
+    <p class="about-sub">
+      Locals gather here for comfort meals, good conversations, and a warm atmosphere.
+    </p>
+
+    <div class="about-highlights">
+      <div>🔥 Bold flavors</div>
+      <div>🍔 Local favorite</div>
+      <div>🤝 Friendly vibe</div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR -->
+<section class="popular reveal">
+  <h2>🔥 Popular Picks</h2>
+  <div class="popular-grid">
+    <div class="card">Burger Special</div>
+    <div class="card">Loaded Fries</div>
+    <div class="card">Grilled Steak</div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="reveal">
+  <h2>Menu</h2>
+  <div class="menu-grid">
+    <div class="menu-card">Catfish Plate - $14.99</div>
+    <div class="menu-card">Chicken Fried Steak - $13.99</div>
+    <div class="menu-card">Classic Burger - $10.99</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery-slider-section">
+
+  <h2>Our Specialties</h2>
+
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="food1.jpg">
+      <div class="slide-content">
+        <h3>Signature Burger</h3>
+        <p>Juicy, bold, unforgettable.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="food2.jpg">
+      <div class="slide-content">
+        <h3>Loaded Fries</h3>
+        <p>Crispy & full of flavor.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="food3.jpg">
+      <div class="slide-content">
+        <h3>Grilled Steak</h3>
+        <p>Perfectly cooked, every time.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews reveal">
+  <h2>What People Say</h2>
+  <div class="review-slider" id="slider">
+    <div class="review">"Amazing food and service!" — John</div>
+    <div class="review">"Feels like home every time." — Sarah</div>
+    <div class="review">"Best spot in town!" — Mike</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section reveal">
+
+  <h2>Visit Us</h2>
+
+  <div class="contact-wrapper">
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <h3>📍 Location</h3>
+        <p>546 Main St, Eureka, UT</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>📞 Call</h3>
+        <p onclick="callNow()">+1 435-433-2337</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>⏰ Hours</h3>
+        <p>Opens 11 AM</p>
+      </div>
+    </div>
+
+    <div class="map-box">
+      <iframe src="https://www.google.com/maps?q=546+Main+St,+Eureka,+UT&output=embed"></iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>B's Hangout</h2>
+      <p>Real food. Real people. Real moments.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>📍 Eureka, UT</p>
+      <p onclick="callNow()">📞 +1 435-433-2337</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 B's Hangout • All rights reserved
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
